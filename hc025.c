@@ -4,6 +4,19 @@
 #include <stdio.h>
 #include <string.h>
 
+
+/*
+
+strchr() 在字符串中查找字符
+strcmp() 比较字符串
+strstr() 在字符串中查找字符串
+strcpy() 复制字符串
+strlen() 返回字符串长度
+strcat() 连接字符串
+
+*/
+
+
 char tracks[][80] = {
   "sdfasdfasdfasdf",
   "4444444444444445",
@@ -20,16 +33,7 @@ void findTrack(char searchFor[]){
     }
   }
 }
-/**
-int main(int argc, char const *argv[]) {
-  char searchFor[80];
-  puts("输入要查找的东西：");
-  fgets(searchFor,80,stdin);
-  searchFor[strlen(searchFor)-1] = '\0';
-  findTrack(searchFor);
-  return 0;
-}
-**/
+
 
 void printReverse(char* s){
   size_t len = strlen(s);
